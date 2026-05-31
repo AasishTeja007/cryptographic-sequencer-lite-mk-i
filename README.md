@@ -1,10 +1,10 @@
 # CryptoGraphic Sequencer Lite MK-I (Base64 Version)
 
-* A custom twin set of automated data conversion utilities designed to handle `multi encoding and decoding` of `base64 scheme` which can be time consuming when done manaully. Inspired by `Batman's arkham gadgets` and `Ironman's suits`. `Lite` name is used as this twin suite does encoding and decoding of base64 layers but not encryption and decryption.
+* A custom twin set of automated data conversion utilities designed to handle `multi encoding and decoding` of `base64 scheme` which can be hectic and time consuming when done manaully. Inspired by `Batman's arkham gadgets` and `Ironman's suits`. `Lite` name is used as this twin suite does encoding and decoding of base64 layers but not encryption and decryption.
 
 * This repository also includes testing using `pytest`, `fixtures` and `parameterization` with multiple test inputs. It serves as a portfolio for `SDET(Software Development Engineer in Test)` showcasing clean data structures, modular design with python and automation framework.
 
-* Also included prototypes of both encoder and decoder which shows initial stage development of these custom twin tools.
+* Also included prototypes of both encoder and decoder which shows initial stage development of these custom twin tools. This utility suite was specifically built to automate the repetative multi encoding and decoding in ctf games like `OverTheWire(OTW)` and in that `Bandit` challenge.
 
 ## Key Features
 
