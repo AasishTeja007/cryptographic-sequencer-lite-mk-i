@@ -26,14 +26,14 @@
 ```text
 CryptoGraphic Sequencer Lite MK-I (Base64 Version)/
 ├── Auto_Decoder/                 # Decoder package folder
-│   ├── __init__.py               # Python package (empty)
-│   ├── decoder_engine.py         # Core logic engine (decoder)
-│   └── decoder_UI.py             # Interactive terminal UI (decoder)
+│   ├── __init__.py               # Python package
+│   ├── decoder_engine.py         # Core logic engine
+│   └── decoder_UI.py             # Interactive terminal UI
 ├── Auto_Encoder/                 # Encoder package folder
-│   ├── __init__.py               # Python package (empty)
-│   ├── encoder_engine.py         # Core logic engine (encoder)
-│   └── encoder_UI.py             # Interactive terminal UI (encoder)
-├── test_tools/                   # Test directory (No '__init__.py')
+│   ├── __init__.py               # Python package
+│   ├── encoder_engine.py         # Core logic engine
+│   └── encoder_UI.py             # Interactive terminal UI
+├── test_tools/                   # Test directory
 │   ├── conftest.py               # Shared Ironman and Batman fixture
 │   └── test_sequencer.py         # Parameterized test cases
 ├── .gitignore                    # Protects repository from local environment and cache files
