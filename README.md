@@ -13,6 +13,14 @@
 * **Heuristic Decoder:** Converts encoded text back into human-readable text by peeling of all the `base64` layers autonomously with `while loop`.
 * **Robust Modular Framework:** `Engine` and `UI` of both `Encoder` and `Decoder` are engineered separately and used `try/except` block to catch errors without breaking the loop.
 
+## Cybersecurity and Purple team operator architecture
+
+* The custom twin tools suite utility was engineered to replicate both real world offensive and defensive security operations, showing the `Purple Team` lifecycle.
+
+* **Offensive Simulation (Red Team):** Threat actors or Red team operators frequently use multi-layered data obfuscation to infiltrate the malicious payload to bypass network detection layers and anti-virus software. This custom `Deterministic Encoder` simulates this process by dynamically adding user-defined base64 layers to the text autonomously, making it hard to be detected and completely unreadable to humans.
+
+* **Defensive Simulation (Blue Team):** Cyber defenders or Blue team operators frequently use multi-layered deobfuscation when a suspicious payload is detected inside network logs to remove the layers to detect actual payload as manual decoding wastes time in critical situations. This custom `Heuristic Decoder` simulates this process by rapidly peeling away the base64 layers autonomously until the human-readable payload is exposed which saves critical time and completely readable to humans.
+
 ## High tech automated testing armor architecture
 
 * The entire data pipeline is tested using `pytest` utilized automation suite combining with fixture and parameterization for battle testing with clean data and multiple inputs.
