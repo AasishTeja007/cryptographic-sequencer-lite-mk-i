@@ -6,6 +6,10 @@
 
 * Also included prototypes of both encoder and decoder which shows initial stage development of these custom twin tools. This utility suite was specifically built to automate the repetative multi encoding and decoding in ctf games like `OverTheWire(OTW)` and in that `Bandit` challenge.
 
+## Security Liability Disclaimer
+
+* This custom utility is developed strictly for `educational purposes`, `CTF wargaming automation` and `authorized security validation exercises`. The author assumes no liability for any `unauthorized` or `improper` or `malicious` utilization of this software. All architectural components and concepts were engineered to demonstrate data automation, data conversion and robust testing frameworks.
+
 ## Key Features
 
 * **Twin-Utility Suite:** Robust twin suite including a `deterministic encoder` and a `heuristic decoder`.
@@ -15,7 +19,7 @@
 
 ## Cybersecurity and Purple team operator architecture
 
-* The custom twin tools suite utility was engineered to replicate both real world offensive and defensive security operations, showing the `Purple Team` lifecycle.
+* The custom twin tools suite security utility was engineered to replicate both real world offensive and defensive security operations, showing the `Purple Team` lifecycle.
 
 * **Offensive Simulation (Red Team):** Threat actors or Red team operators frequently use multi-layered data obfuscation to infiltrate the malicious payload to bypass network detection layers and anti-virus software. This custom `Deterministic Encoder` simulates this process by dynamically adding user-defined base64 layers to the text autonomously, making it hard to be detected and completely unreadable to humans.
 
