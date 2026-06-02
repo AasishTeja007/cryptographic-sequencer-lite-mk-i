@@ -8,7 +8,7 @@
 
 ## Security Liability Disclaimer
 
-* This custom utility is developed strictly for `educational purposes`, `CTF wargaming automation` and `authorized security validation exercises`. The author assumes no liability for any `unauthorized` or `improper` or `malicious` utilization of this software. All architectural components and concepts were engineered to demonstrate data automation, data conversion and robust testing frameworks.
+* This custom utility is developed strictly for `educational purposes`, `CTF wargaming automation` and `authorized security validation exercises`. The author assumes no liability for any `unauthorized` or `improper` or `malicious` utilization of this software. All architectural components and concepts were engineered to demonstrate `data automation`, `data conversion` and `robust testing frameworks`.
 
 ## Key Features
 
