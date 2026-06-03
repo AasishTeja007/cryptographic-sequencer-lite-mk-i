@@ -1,22 +1,34 @@
+# Import base64 library
 import base64
 
-def encoder_core(text: str, layers: int) -> str:
+# Encoder core function
+def encoder_core(text: str, layers: int) -> str:   # Type Hinting
     
+    # Initialize normal text input to current data
     current_data = text.strip()
     
+    # Core loop
     for i in range(layers):
         
+        # Check data type of current data
         if isinstance(current_data, str):
+            # If string, convert string to raw bytes
             data_bytes = current_data.encode('utf-8')
         else:
+            # Else, bytes stay intact
             data_bytes = current_data
-            
+        
+        # Encode the normal bytes
         encoded_bytes = base64.b64encode(data_bytes)
-            
+        
+        # Convert the encoded bytes to encoded string
         encoded_string = encoded_bytes.decode('utf-8')
-            
+        
+        # Update current data after each iteration
         current_data = encoded_string
-            
+        
+        # Print success statement for each encoded layer
         print(f"Layer {i + 1} has been encoded successfully...")
-            
+    
+    # Return current data value
     return current_data

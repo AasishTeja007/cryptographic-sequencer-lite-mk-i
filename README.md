@@ -1,29 +1,25 @@
 # CryptoGraphic Sequencer Lite MK-I (Base64 Version)
 
-* A custom twin set of automated data conversion utilities designed to handle `multi encoding and decoding` of `base64 scheme` which can be hectic and time consuming when done manaully. Inspired by `Batman's arkham gadgets` and `Ironman's suits`. `Lite` name is used as this twin suite does encoding and decoding of base64 layers but not encryption and decryption. This custom twin tools suite only `encodes` or `decodes` normal text only. Can't encode or decode images and videos.
+* A custom twin set of automated data conversion utilities designed to handle `multi encoding and decoding` of `base64 scheme` which can be hectic and time consuming when done manually. Inspired by `Batman's arkham gadgets` and `Ironman's suits`. `Lite` name is used as this twin suite does encoding and decoding of base64 layers but not encryption and decryption. This custom twin security tools suite only `encodes` or `decodes` normal text only. Can't encode or decode images and videos.
 
 * This repository also includes testing using `pytest`, `fixtures` and `parameterization` with multiple test inputs. It serves as a portfolio for `SDET(Software Development Engineer in Test)` showcasing clean data structures, modular design with python and automation framework.
 
-* Also included prototypes of both encoder and decoder which shows initial stage development of these custom twin tools. This utility suite was specifically built to automate the repetative multi encoding and decoding in ctf games like `OverTheWire(OTW)` and in that `Bandit` challenge.
-
-## Security Liability Disclaimer
-
-* This custom utility is developed strictly for `educational purposes`, `CTF wargaming automation` and `authorized security validation exercises`. The author assumes no liability for any `unauthorized` or `improper` or `malicious` utilization of this software. All architectural components and concepts were engineered to demonstrate `data automation`, `data conversion` and `robust testing frameworks`.
+* Also included prototypes of both encoder and decoder which shows initial stage development of these custom twin tools. This utility suite was specifically built to automate the repetitive multi encoding and decoding in `CTF games` like `OverTheWire(OTW)` and in that `Bandit` challenge.
 
 ## Key Features
 
 * **Twin-Utility Suite:** Robust twin suite including a `deterministic encoder` and a `heuristic decoder`.
 * **Deterministic Encoder:** Converts human-readable text into encoded text by adding user-defined number of `base64` layers with `for loop`.
-* **Heuristic Decoder:** Converts encoded text back into human-readable text by peeling of all the `base64` layers autonomously with `while loop`.
+* **Heuristic Decoder:** Converts encoded text back into human-readable text by peeling away all the `base64` layers autonomously with `while loop`.
 * **Robust Modular Framework:** `Engine` and `UI` of both `Encoder` and `Decoder` are engineered separately and used `try/except` block to catch errors without breaking the loop.
 
-## Cybersecurity and Purple team operator architecture
+## Cybersecurity automation and Purple team operator architecture
 
-* The custom twin tools suite security utility was engineered to replicate both real world offensive and defensive security operations, showing the `Purple Team` lifecycle.
+* The custom twin tools automation suite security utility was engineered to replicate both real world offensive and defensive security operations, showing the `Purple Team` lifecycle.
 
-* **Offensive Simulation (Red Team):** Threat actors or Red team operators frequently use multi-layered data obfuscation to infiltrate the malicious payload to bypass network detection layers and anti-virus software. This custom `Deterministic Encoder` simulates this process by dynamically adding user-defined base64 layers to the text autonomously, making it hard to be detected and completely unreadable to humans.
+* **Offensive Simulation (Red Team):** `Threat actors` or `Red team operators` frequently use `multi-layered data obfuscation` to infiltrate the malicious payload to bypass network detection layers and anti-virus software. This custom `Deterministic Encoder` simulates this process by dynamically adding user-defined base64 layers to the text autonomously, making it hard to be detected and completely unreadable to humans.
 
-* **Defensive Simulation (Blue Team):** Cyber defenders or Blue team operators frequently use multi-layered deobfuscation when a suspicious payload is detected inside network logs to remove the layers to detect actual payload as manual decoding wastes time in critical situations. This custom `Heuristic Decoder` simulates this process by rapidly peeling away the base64 layers autonomously until the human-readable payload is exposed which saves critical time and completely readable to humans.
+* **Defensive Simulation (Blue Team):** `Cyber defenders` or `Blue team operators` frequently use `multi-layered data deobfuscation` when a suspicious payload is detected inside network logs to remove the layers to detect actual payload as manual decoding wastes time in critical situations. This custom `Heuristic Decoder` simulates this process by rapidly peeling away the base64 layers autonomously until the human-readable payload is exposed which saves critical time and completely readable to humans.
 
 ## High tech automated testing armor architecture
 
@@ -70,3 +66,7 @@ python -m pip install -r requirements.txt
 ```bash
 python -m pytest -v
 ```
+
+## Security Liability Disclaimer
+
+* This custom utility is developed strictly for `educational purposes`, `CTF wargaming automation` and `authorized security validation exercises`. The author assumes no liability for any `unauthorized` or `improper` or `malicious` utilization of this software. All architectural components and concepts were engineered to demonstrate `data automation`, `data conversion` and `robust testing frameworks`.
