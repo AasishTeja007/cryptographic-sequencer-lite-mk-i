@@ -1,4 +1,4 @@
-# Import function from module
+# Relative import function from module
 from .encoder_engine import encoder_core
 
 # Encoder UI function
@@ -20,6 +20,9 @@ def auto_encoder():
         try:
             # Encode layers count input
             encode_count = int(input("Enter the number of encoding(s): ").strip())
+            
+            # Secret key value input
+            encrypt_count = int(input("Enter the encryption count: ").strip())
         
         # Catch value error and continue    
         except ValueError:
@@ -27,7 +30,7 @@ def auto_encoder():
             continue
         
         # Function call
-        result_text = encoder_core(normal_text, encode_count)
+        result_text = encoder_core(normal_text, encode_count, encrypt_count)
         
         # Print success statement
         print("Encoding successful!")

@@ -1,8 +1,11 @@
 # Import base64 library
 import base64
 
+# From folder import helper function
+from Cryptographic_Helper.caeser_helper import caeser_cipher_base64
+
 # Encoder core function
-def encoder_core(text: str, layers: int) -> str:   # Type Hinting
+def encoder_core(text: str, layers: int, secret_key: int) -> str:   # Type Hinting
     
     # Initialize normal text input to current data
     current_data = text.strip()
@@ -24,8 +27,11 @@ def encoder_core(text: str, layers: int) -> str:   # Type Hinting
         # Convert the encoded bytes to encoded string
         encoded_string = encoded_bytes.decode('utf-8')
         
-        # Update current data after each iteration
-        current_data = encoded_string
+        # Encrypt the encoded string
+        scrambled_string = caeser_cipher_base64(text=encoded_string, shift=secret_key, decrypt=False)
+        
+        # Update the encrypted string to current data
+        current_data = scrambled_string
         
         # Print success statement for each encoded layer
         print(f"Layer {i + 1} has been encoded successfully...")

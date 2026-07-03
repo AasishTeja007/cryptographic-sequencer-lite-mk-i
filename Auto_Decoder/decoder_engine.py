@@ -1,8 +1,11 @@
 # Import base64 library
 import base64
 
+# From folder import helper function
+from Cryptographic_Helper.caeser_helper import caeser_cipher_base64
+
 # Decoder core function
-def decoder_core(encoded_text: str) -> tuple[str, int]:   # Type Hinting
+def decoder_core(encoded_text: str, secret_key: int) -> tuple[str, int]:   # Type Hinting
     
     # Initialize encoded text input to current data
     current_data = encoded_text.strip()
@@ -17,16 +20,24 @@ def decoder_core(encoded_text: str) -> tuple[str, int]:   # Type Hinting
         try:
             # Check data type of current data
             if isinstance(current_data, str):
-                # If string, convert encoded string to raw bytes
-                data_bytes = current_data.encode('utf-8')
+                # If string, decrypt the current data
+                unshifted_layer = caeser_cipher_base64(text=current_data, shift=secret_key, decrypt=True)
             else:
-                # Else, encoded bytes stay intact
-                data_bytes = current_data
+                # Else, current data stays intact
+                unshifted_layer = current_data
             
-            # Decode the encoded bytes
+            # Check data type of decrypted data
+            if isinstance(unshifted_layer, str):
+                # If string, convert decrypted string to raw bytes
+                data_bytes = unshifted_layer.encode('utf-8')
+            else:
+                # Else, decrypted bytes stay intact
+                data_bytes = unshifted_layer
+            
+            # Decode the decrypted bytes
             decoded_bytes = base64.b64decode(data_bytes)
             
-            # Convert the decoded bytes to normal string
+            # Convert the decrypted bytes to normal string
             decoded_string = decoded_bytes.decode('utf-8')
             
             # Safety check for infinity loop

@@ -1,4 +1,4 @@
-# Import function from module
+# Relative import function from module
 from .decoder_engine import decoder_core
 
 # Decoder UI function
@@ -17,8 +17,18 @@ def auto_decoder():
             print("Goodbye! Have a nice day!")
             break
         
+        # Error handling block
+        try:
+            # Secret key value input
+            decrypt_count = int(input("Enter the decryption count: ").strip())
+        
+        # Catch value error and continue    
+        except ValueError:
+            print("The given value is invalid. Enter a valid whole number")
+            continue
+        
         # Function call
-        result_text, count_decode = decoder_core(encoded_text)
+        result_text, count_decode = decoder_core(encoded_text, decrypt_count)
         
         # Print success statement
         print("Decoding successful!")
